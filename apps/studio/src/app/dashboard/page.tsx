@@ -1,3 +1,4 @@
+import InputField from "@/components/InputField";
 export default function DashboardPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex justify-center items-center p-10">
@@ -10,30 +11,18 @@ export default function DashboardPage() {
         <p className="mt-2 text-slate-400">
           Generate New Episode
         </p>
-<div className="mt-6">
-  <label className="block mb-2 text-sm font-medium">
-    Episode Number
-  </label>
+<InputField
+  label="Episode Number"
+  placeholder="102"
+/>
 
-  <input
-    className="w-full rounded-lg border border-slate-700 bg-slate-800 p-3 text-white placeholder-gray-700"
-    placeholder="102"
-  />
+<InputField
+  label="Topic"
+  placeholder="Camera Angle"
+/>
+
+
 </div>
-
-<div className="mt-6">
-  <label className="block mb-2 text-sm font-medium">
-    Topic
-  </label>
-
-  <input
-    className="w-full rounded-lg border border-slate-700 bg-slate-800 p-3 text-white placeholder-gray-700"
-    placeholder="Camera Angle"
-  />
-</div>
-
-
-      </div>
-    </main>
+ </main>
   );
 }
